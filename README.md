@@ -31,12 +31,14 @@ O banco de dados inclui as seguintes entidades principais:
 ## 📊 Exemplos de Uso
 
 ### Exemplo de Query
+```sql
 Listar todos os professores e suas disciplinas:
 SELECT p.nome AS Professor, d.nome AS Disciplina
 FROM Professores p
 JOIN Disciplinas d ON p.id_professor = d.professor_id
 ORDER BY p.nome, d.nome;
-
+```
 ### Exemplo de Procedure
 ```sql
 CALL ManipularDadosUniversidadeComplexa(1, 'Alunos', 1, NULL, NULL, NULL, NULL);
+```

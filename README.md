@@ -28,20 +28,15 @@ O banco de dados inclui as seguintes entidades principais:
 
 - **MySQL Workbench 8.0** para modelagem e manipulação do banco de dados.
 - **SQL** para criação de tabelas, procedimentos, e consultas otimizadas.
-
 ## 📊 Exemplos de Uso
 
-### Exemplo de Procedure
-```sql
-CALL ManipularDadosUniversidadeComplexa(1, 'Alunos', 1, NULL, NULL, NULL, NULL);
-
-#### Exemplo de Query
+### Exemplo de Query
 Listar todos os professores e suas disciplinas:
 SELECT p.nome AS Professor, d.nome AS Disciplina
 FROM Professores p
 JOIN Disciplinas d ON p.id_professor = d.professor_id
 ORDER BY p.nome, d.nome;
 
-📝 Contribuições e Melhorias
-
-Sugestões são bem-vindas! Sinta-se à vontade para abrir um pull request ou registrar uma issue.
+### Exemplo de Procedure
+```sql
+CALL ManipularDadosUniversidadeComplexa(1, 'Alunos', 1, NULL, NULL, NULL, NULL);
